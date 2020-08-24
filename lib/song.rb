@@ -53,7 +53,7 @@ class Song
 
   def self.new_from_filename(filename)
     # "Taylor Swift - Blank Space.mp3"
-    
+
 
     @song = Song.new
     @song.name = filename.split("-")[0].strip
