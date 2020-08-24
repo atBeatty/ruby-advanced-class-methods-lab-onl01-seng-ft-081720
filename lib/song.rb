@@ -55,7 +55,7 @@ class Song
     # "Taylor Swift - Blank Space.mp3"
 
 
-    song = Song.new
+    @song = Song.new
     song.name = filename.split("-")[0].strip
     song.artist_name = filename.split("-")[1].strip
     @@all << song
