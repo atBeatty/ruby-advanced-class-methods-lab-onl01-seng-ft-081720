@@ -56,9 +56,9 @@ class Song
 
 
     @song = Song.new
-    song.name = filename.split("-")[0].strip
-    song.artist_name = filename.split("-")[1].strip
-    @@all << song
+    @song.name = filename.split("-")[0].strip
+    @song.artist_name = filename.split("-")[1].strip
+    @@all << @song
 
   end
 
