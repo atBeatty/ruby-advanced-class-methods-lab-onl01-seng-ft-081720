@@ -60,7 +60,9 @@ class Song
     @song.name = filename.split("-")[1].strip.split(".")[0]
     @song
   end
-
+  def self.
+    
+  end
   def self.destroy_all
     @@all.clear
 
