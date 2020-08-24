@@ -60,8 +60,12 @@ class Song
     @song.name = filename.split("-")[1].strip.split(".")[0]
     @song
   end
-  def self.
+  def self.create_from_filename(filename)
 
+    @song = Song.new
+    @song.artist_name = filename.split("-")[0].strip
+    @song.name = filename.split("-")[1].strip.split(".")[0]
+    @@all << @song
   end
   def self.destroy_all
     @@all.clear
