@@ -56,11 +56,11 @@ class Song
     @name = filename.split("-")[0].strip
     @artist_name = filename.split("-").strip
 
-    song = Song.new 
+    song = Song.new
     song.name = @name
     song.artist_name = @artist_name
     @@all << song
-    
+
   end
 
 end
